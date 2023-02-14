@@ -1,5 +1,7 @@
 package tarea6;
 
+import ordenacion.Ordenacion;
+
 import java.util.Scanner;
 
     public class Tarea6 {
@@ -9,18 +11,18 @@ import java.util.Scanner;
         public static void main(String[] args) {
 
 
-            SelectionSort selectionSort = new SelectionSort();
+            Ordenacion ordenacion = new Ordenacion();
             int[] array1 = { 10, 1, 5, 40, 12, 34, 44, 12, 11, 9 };
-            selectionSort.printArray(array1);
-            selectionSort.sortArray(array1);
-            selectionSort.printArray(array1);
+            ordenacion.imprimirArray(array1);
+            ordenacion.ordenarArray(array1);
+            ordenacion.imprimirArray(array1);
             System.out.println();
 
             int[] array2 = { 3, 1, 23, 18, 41, 4, 44, 7, 16, 2 };
             int[] array3;
-            selectionSort.printArray(array2);
-            array3=selectionSort.sortArray2(array2);
-            selectionSort.printArray(array3);
+            ordenacion.imprimirArray(array2);
+            array3= ordenacion.ordenarArray2(array2);
+            ordenacion.imprimirArray(array3);
         }
 
         public static int ej1(int a, int b, int c){
@@ -50,11 +52,11 @@ import java.util.Scanner;
             }
         }
 
-        public static void ej4(int x){
-            if(x<16){
+        public static void ej4(int edad){
+            if(edad <16){
                 System.out.println("Eres demasiado pequeño para conducir y beber");
             }
-            else if(x<21){
+            else if(edad <21){
                 System.out.println("Puedes conducir pero no beber");
             }
             else{
