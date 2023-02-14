@@ -5,6 +5,9 @@ package tarea6;
  * @author Juan Simón
  *
  */
+
+/**
+ * Este es un comentario para verficar el control de versiones hecho por Daniel Salazar*/
 public class Calculadora {
 
     public Calculadora(){
